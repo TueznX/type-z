@@ -43,6 +43,12 @@
     animation: up-down 1s ease infinite;
 }
 
+@media (height < 690px) {
+    .hero__tip {
+        display: none;
+    }
+}
+
 @keyframes up-down {
     50% {
         transform: translateY(1px);
