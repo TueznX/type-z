@@ -8,10 +8,6 @@
     background-position: center;
 }
 
-body {
-    overflow: hidden;
-}
-
 .success__title {
     font-family: inherit;
     font-weight: bold;
