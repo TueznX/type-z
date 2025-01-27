@@ -79,13 +79,6 @@
     border: 2px solid rgba(46, 46, 46, 0.3);
 }
 
-@media (width < 631px) {
-    .popup {
-        width: auto;
-        max-width: 555px;
-    }
-}
-
 .popup__title-dec {
     background-color: #f3f3f3;
     width: 100px;
@@ -115,4 +108,11 @@
 
 .popup__desc span {
     color: #f3f3f3;
+}
+
+@media (width < 631px) {
+    .popup {
+        width: auto;
+        max-width: 555px;
+    }
 }

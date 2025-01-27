@@ -12,6 +12,7 @@
 
 .info__video {
     margin-top: 3cm;
+    margin-inline: 20px;
     border-radius: 10px;
     border: 2px solid rgb(46, 46, 46);
     max-width: 690px;

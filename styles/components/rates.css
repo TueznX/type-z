@@ -31,16 +31,6 @@
     z-index: 1;
 }
 
-@media (width < 1382px) {
-    .rates__gradient-left {
-        background-image: linear-gradient(to right, #1a1a1a, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-    }
-
-    .rates__gradient-right {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #1a1a1a);
-    }
-}
-
 @keyframes ratesslide {
     from {
         transform: translateX(0);
@@ -48,5 +38,15 @@
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+@media (width < 1382px) {
+    .rates__gradient-left {
+        background-image: linear-gradient(to right, #1a1a1a, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+    .rates__gradient-right {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #1a1a1a);
     }
 }

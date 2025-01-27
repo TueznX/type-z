@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     gap: 1cm;
     justify-content: center;
-    margin-block: 2cm;
+    margin-top: 2cm;
     margin-inline: 20px;
     max-width: 1200px;
 }
@@ -46,7 +46,7 @@
     background-color: #202020;
     color: inherit;
     text-decoration: none;
-    padding: 0.7rem 4.7rem;
+    padding: 0.3cm 2cm;
     transition: 0.3s ease;
 }
 
@@ -89,4 +89,74 @@
 .info3__card-price span {
     color: #7e7e7e;
     font-size: 0.7rem;
+}
+
+@media (width < 578px) {
+    .info3__cards {
+        gap: 0.3cm;
+        margin-inline: 10px;
+    }
+}
+
+@media (width < 532px) {
+    .info3__card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .info3__card-unavailable {
+        width: 200px;
+        height: 300px;
+    }
+
+    .info3__card-title {
+        font-size: 1rem;
+    }
+
+    .info3__card-desc {
+        font-size: 0.5rem;
+    }
+
+    .info3__card-img {
+        max-height: 80px;
+    }
+
+    .info3__card-btn {
+        padding: 0.3cm 1.3cm;
+    }
+}
+
+@media (width < 432px) {
+    .info3__card {
+        width: 180px;
+        height: 233px;
+    }
+
+    .info3__card-unavailable {
+        width: 180px;
+        height: 233px;
+    }
+
+    .info3__card-title {
+        font-size: 0.8rem;
+    }
+
+    .info3__card-desc {
+        display: none;
+    }
+
+    .info3__card-img {
+        max-height: 80px;
+    }
+
+    .info3__card-btn {
+        padding: 0.3cm 1.05cm;
+    }
+}
+
+@media (width < 392px) {
+    .info3__cards {
+        gap: 0.1cm;
+        margin-inline: 0.1cm;
+    }
 }

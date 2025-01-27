@@ -48,6 +48,10 @@
     border-bottom-left-radius: 0px;
 }
 
+.faq input[type=radio]:checked+label span {
+    background-color: #2b2b2b;
+}
+
 .faq__awnser {
     color: #5c5c5c;
     padding-inline: 14px;
