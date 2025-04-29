@@ -1,0 +1,147 @@
+.purchase__popup {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    z-index: 2;
+    background-color: #141414d7;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.purchase__popup.visible {
+    display: flex;
+}
+
+.popup__title-3p {
+    position: relative;
+}
+
+.popup__title-3p::before {
+    content: "";
+    animation: points-animation 3s infinite;
+}
+
+@keyframes points-animation {
+    0% {
+        content: "";
+    }
+
+    25% {
+        content: ".";
+    }
+
+    50% {
+        content: "..";
+    }
+
+    75% {
+        content: "...";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+.popup__btns {
+    margin-top: 25px;
+}
+
+.popup__btn {
+    border: 2px solid rgba(46, 46, 46, 0.2);
+    border-radius: 20px;
+    background-color: rgba(46, 46, 46, 0.1);
+    padding: 0.7rem 1.2rem;
+    color: inherit;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup__btn i {
+    margin-left: 7px;
+}
+
+.popup__btn:hover {
+    border: 2px solid rgba(46, 46, 46, 0.4);
+    color: #d6d6d6;
+    background-color: rgba(46, 46, 46, 0.3);
+}
+
+.popup__btn-dc {
+    margin-left: 1cm;
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(98, 101, 242);
+    transition: 0.3s ease;
+    border-radius: 15px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup__btn-dc:hover {
+    background-color: rgb(78, 81, 241);
+    color: #dadada;
+    transition: 0.3s ease;
+}
+
+.popup__btn i {
+    margin-right: 7px;
+}
+
+.popup__btn-dc i {
+    margin-right: 7px;
+}
+
+.popup {
+    background-color: #141414;
+    padding: 0.5cm 0.5cm;
+    border-radius: 12px;
+    margin-inline: 0.5cm;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid rgba(46, 46, 46, 0.3);
+}
+
+.popup__title-dec {
+    background-color: #f3f3f3;
+    width: 100px;
+    height: 4px;
+    border-radius: 20px;
+}
+
+.popup__title {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 0.3cm;
+    line-height: 1;
+    margin-inline: 15px;
+    text-align: center;
+}
+
+.popup__desc {
+    color: #5c5c5c;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-top: 0.3cm;
+    margin-inline: 15px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.popup__desc span {
+    color: #f3f3f3;
+}
+
+@media (width < 631px) {
+    .popup {
+        width: auto;
+        max-width: 555px;
+    }
+}
