@@ -16,13 +16,18 @@ var swiper = new Swiper(".swiper", {
 });
 const navMenu = document.querySelector(".nav__menu");
 const headerMenu = document.querySelector(".header__menu");
-
+const navButtons = document.querySelectorAll(".nav__btn");
 navMenu.addEventListener("click", () => {
   if (headerMenu.style.display === "none" || headerMenu.style.display === "") {
     headerMenu.style.display = "flex";
   } else {
     headerMenu.style.display = "none";
   }
+});
+navButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    headerMenu.style.display = "none";
+  });
 });
 
 window.scrollreveal = ScrollReveal({ reset: true })
