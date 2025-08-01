@@ -1,0 +1,48 @@
+.info {
+  text-align: center;
+  min-height: 105vh;
+  background-image: url(../../images/Background2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.video-container {
+  position: relative;
+}
+
+.info__video {
+  margin-top: 3cm;
+  margin-inline: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(46, 46, 46);
+  max-width: 690px;
+  max-height: 395px;
+  display: block;
+  overflow: hidden;
+}
+
+.info__btn i {
+  padding-right: 7px;
+}
+
+.info__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-55%);
+  background-color: rgb(26, 26, 26, 0.8);
+  border: 2px solid rgba(46, 46, 46, 0.8);
+  padding: 1cm;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.info__video-btn:hover {
+  background-color: rgb(26, 26, 26, 0.9);
+  border: 2px solid rgba(46, 46, 46, 0.9);
+  color: #c5c4c4;
+}
+
+.info__video-btn i {
+  scale: 2;
+}

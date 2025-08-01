@@ -1,0 +1,14 @@
+.footer__title {
+  color: #5c5c5c;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.footer {
+  background-color: #141414;
+  height: 0.7cm;
+  align-content: center;
+}

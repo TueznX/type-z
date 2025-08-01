@@ -1,0 +1,169 @@
+.shop {
+  text-align: center;
+  min-height: 105vh;
+  margin-top: 3cm;
+  margin-bottom: 1cm;
+  background-image: url(../images/Background5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shop__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1cm;
+  justify-content: center;
+  margin-inline: 20px;
+  max-width: 1200px;
+}
+
+.shop__separator {
+  margin-block: 0.5cm;
+}
+
+.shop__card {
+  height: 350px;
+  width: 250px;
+  background-color: #1b1b1b;
+  border: 2px solid rgb(29, 29, 29);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero__tip {
+  color: #5c5c5c;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+  padding-bottom: 0.5cm;
+}
+
+#hero__tip-arrow {
+  animation: up-down 1s ease infinite;
+}
+
+@keyframes up-down {
+  50% {
+    transform: translateY(1px);
+  }
+
+  100% {
+    transform: translateY(-1px);
+  }
+}
+
+.shop__card:hover {
+  background-color: #1d1d1d;
+  border: 2px solid rgb(30, 30, 30);
+  scale: 1.1;
+}
+
+.shop__card-btn {
+  background-color: #202020;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.3cm 2cm;
+  transition: 0.3s ease;
+}
+
+.shop__card-btn:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.shop__card-btn i {
+  padding-right: 7px;
+}
+
+.shop__card-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5px;
+  text-align: center;
+}
+
+.shop__card-desc {
+  color: #5c5c5c;
+  font-family: inherit;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.shop__card-img {
+  margin-top: 10px;
+  width: auto;
+  height: 100px;
+}
+
+.shop__card-price {
+  margin-top: 0.88cm;
+  margin-bottom: 0.5cm;
+  font-weight: bold;
+}
+
+.shop__card-price span {
+  color: #7e7e7e;
+  font-size: 0.7rem;
+}
+
+@media (width < 578px) {
+  .shop__cards {
+    gap: 0.3cm;
+    margin-inline: 10px;
+  }
+}
+
+@media (width < 532px) {
+  .shop__card {
+    width: 200px;
+    height: 300px;
+  }
+
+  .shop__card-title {
+    font-size: 1rem;
+  }
+
+  .shop__card-desc {
+    font-size: 0.5rem;
+  }
+
+  .shop__card-img {
+    max-height: 80px;
+  }
+
+  .shop__card-btn {
+    padding: 0.3cm 1.3cm;
+  }
+}
+
+@media (width < 432px) {
+  .shop__card {
+    width: 180px;
+    height: 233px;
+  }
+
+  .shop__card-title {
+    font-size: 0.8rem;
+  }
+
+  .shop__card-desc {
+    display: none;
+  }
+
+  .shop__card-img {
+    max-height: 80px;
+  }
+
+  .shop__card-btn {
+    padding: 0.3cm 1.05cm;
+  }
+}
+
+@media (width < 392px) {
+  .shop__cards {
+    gap: 0.1cm;
+    margin-inline: 0.1cm;
+  }
+}

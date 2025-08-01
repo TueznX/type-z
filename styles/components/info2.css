@@ -1,0 +1,38 @@
+.info2 {
+  text-align: center;
+  min-height: 105vh;
+  background-image: url(../../images/Background3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper {
+  margin-top: 2cm;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 320px;
+}
+
+.info2__tip {
+  color: #5c5c5c;
+  font-size: 0.9rem;
+  padding-top: 0.8cm;
+}
+
+.info2__tip-swipe {
+  background-color: #5c5c5c;
+  width: 10px;
+  height: 2px;
+}
+
+@media (width < 645px) {
+  .swiper-slide {
+    width: 260px;
+  }
+
+  .info2 {
+    min-height: 85vh;
+  }
+}
