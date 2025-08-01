@@ -17,7 +17,7 @@ var swiper = new Swiper(".swiper", {
 
 const navMenu = document.querySelector(".nav__menu");
 const headerMenu = document.querySelector(".header__menu");
-const navButtons = document.querySelectorAll(".nav__btn");
+const navButtons = document.querySelectorAll(".nav2__btn");
 navMenu.addEventListener("click", () => {
     if (headerMenu.style.display === "none" || headerMenu.style.display === "") {
         headerMenu.style.display = "flex";

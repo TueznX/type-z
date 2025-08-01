@@ -148,9 +148,6 @@
     .hero__img {
         width: 100%;
     }
-    .hero {
-        margin-bottom: 0.5cm;
-    }
 }
 
 @media (width < 320px) {
