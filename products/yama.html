@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Z</title>
+    <link rel="icon" href="../images/PNGLogo.webp" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/popup1.css" />
+    <link rel="stylesheet" href="./styles/popup2.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <div class="center__align">
+        <header class="header">
+            <a class="header__logo nav__redirect" href="../index.html"><img src="../images/PNGLogo.webp"></a>
+            <nav>
+                <ul class="nav__ul">
+                    <li><a href="../index.html#info" class="nav__btn nav__redirect"><i
+                                class="fa-solid fa-apple-whole"></i><span>Blox
+                                Fruits</span></a></li>
+                    <li><a href="../index.html#info2" class="nav__btn nav__redirect"><i
+                                class="fa-solid fa-laptop"></i><span>Otimização</span></a>
+                    </li>
+                    <li><a href="../index.html#info3" class="nav__btn nav__redirect"><i
+                                class="fa-solid fa-globe"></i><span>GTA
+                                Online</span></a></li>
+                    <li><a href="../shop.html#shop" class="nav__btn nav__redirect"><i
+                                class="fa-solid fa-money-bills"></i><span>Serviços</span></a></li>
+                    <li><a href="https://discord.gg/K7RQqjDMBT" target="_blank" rel="noopener noreferrer"
+                            class="nav__btn nav__redirect" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-discord"></i></a></li>
+                    <li><button class="nav__menu"><i class="fa-solid fa-bars"></i></button></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="header__menu">
+            <a href="#info" class="nav2__btn nav__btn">BloxFruits</a>
+            <a href="#info2" class="nav2__btn nav__btn">Otimização</a>
+            <a href="#info3" class="nav2__btn nav__btn">GTAOnline</a>
+            <a href="shop.html" class="nav2__btn nav__btn">Serviços</a>
+            <a href="https://discord.gg/K7RQqjDMBT" target="_blank" rel="noopener noreferrer"
+                class="nav2__btn">Discord</a>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero__padding">
+            <div class="center__align">
+                <div class="content">
+                    <a href="../shop.html#shop" class="hero__btn-voltar hero__btn"><i
+                            class="fa-solid fa-arrow-left"></i>Voltar</a>
+                    <a onclick="copyLink()" class="hero__btn-share hero__btn">
+                        <i class="fa-solid fa-share-nodes"></i><span>Compartilhar</span></a>
+                </div>
+            </div>
+            <div class="center__align">
+                <div class="hero__content">
+                    <div class="hero__img"><img src="../images/Yama.webp" /></div>
+                    <div class="hero__info">
+                        <div class="hero__info-content">
+                            <h1 class="hero__title">Yama</h1>
+                            <p class="hero__desc">
+                                Oferecemos um serviço especializado para ajudá-lo a obter a lendária Yama, uma arma de
+                                elite que transforma completamente sua experiência no jogo. Garantimos um processo
+                                eficiente e seguro, eliminando o esforço repetitivo e acelerando sua conquista dessa
+                                espada.
+                            </p>
+                            <p class="hero__price">R$5,90</p>
+                            <button onclick="openPurchasePopup()" class="hero__btn">
+                                <i class="fa-solid fa-basket-shopping"></i>Comprar Agora
+                            </button>
+                        </div>
+                        <div class="hero__info-content">
+                            <h1 class="hero__info2-title">
+                                <i class="fa-solid fa-shield-halved"></i> Entrega garantida
+                            </h1>
+                            <p class="hero__info2-desc">
+                                A entrega do seu produto é garantida ou você receberá o seu
+                                dinheiro de volta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="purchase__popup1" id="purchase__popup1">
+            <div class="popup1">
+                <div class="center__align">
+                    <div class="popup1__title-dec"></div>
+                </div>
+                <div class="center__align">
+                    <h1 class="popup1__title">
+                        <span class="gradient__title">Método</span> de Compra
+                    </h1>
+                </div>
+                <div class="center__align">
+                    <p class="popup1__desc">
+                        As compras realizadas por meio da GGMax estão sujeitas a uma taxa
+                        de 12,99% sobre o valor do produto. Se optar por realizar a compra
+                        pelo Mercado Pago selecione o valor do serviço no checkout.
+                    </p>
+                </div>
+                <div class="center__align">
+                    <div class="popup1__btns">
+                        <a href="https://ggmax.com.br/anuncio/itens-e-boosts-blox-fruits-brindes-nao-sao-contas"
+                            target="_blank" rel="noopener noreferrer" onclick="openSecondPopup()" class="popup1__btn"
+                            id="popup1__btn"><i class="fa-solid fa-g"></i>GGMax</a>
+                        <a href="https://mpago.la/1BbyuG1" target="_blank" rel="noopener noreferrer"
+                            class="popup1__btn2" onclick="openSecondPopup()" id="popup1__btn"><i
+                                class="fa-solid fa-handshake"></i>MercadoPago</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="purchase__popup2" id="purchase__popup2">
+            <div class="popup2">
+                <div class="center__align">
+                    <div class="popup2__title-dec"></div>
+                </div>
+                <div class="center__align">
+                    <h1 class="popup2__title">
+                        <span class="gradient__title">Aguardando </span>Transação<span class="title__anim"></span>
+                    </h1>
+                </div>
+                <div class="center__align">
+                    <p class="popup2__desc">
+                        <span>Para compras efetuadas via Mercado Pago:</span><br />
+                        Acesse o servidor do Discord da Type-Z.<br />
+                        Abra um ticket na aba Compras.<br />
+                        Anexe o comprovante do PIX juntamente com seu nome completo.<br />
+                        <span>Para compras realizadas pela GGMax:</span><br />
+                        Aguarde o retorno diretamente pelo site.<br />
+                    </p>
+                </div>
+                <div class="center__align">
+                    <div class="popup2__btns">
+                        <a class="popup2__btn" id="popup2__btn"><i class="fa-solid fa-arrow-left"></i>Voltar</a>
+                        <a href="https://discord.gg/K7RQqjDMBT" target="_blank" rel="noopener noreferrer"
+                            class="popup2__btn2"><i class="fa-brands fa-discord"></i>Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="center__align">
+        <section class="info">
+            <h1 class="hero__info2-title"><i class="fa-solid fa-book-bookmark"></i>Termos e Condições</h1>
+            <p class="hero__info2-desc">
+                <span>Produtos e Preços:</span> <br>
+                • Todos os produtos e preços estão sujeitos a alterações sem aviso prévio. <br>
+                • Os produtos digitais são entregues eletronicamente. <br>
+                <span>Pagamento:</span> <br>
+                • Aceitamos apenas pix método de pagamento. <br>
+                • Todos os pagamentos devem ser feitos no momento da compra. <br>
+                • Os pagamentos são processados ​​por um processador de pagamento seguro. <br>
+                <span>Reembolsos e Devoluções:</span> <br>
+                • Os produtos digitais geralmente não são reembolsáveis. <br>
+                • Os reembolsos serão emitidos no mesmo método de pagamento usado para a compra original. <br>
+                <span>Propriedade Intelectual:</span> <br>
+                • Todo o conteúdo da Type-Z, incluindo texto, imagens, software e outros materiais, é protegido por
+                direitos
+                autorais e outras leis de propriedade intelectual. <br>
+                • Você não pode usar, copiar, reproduzir, modificar, traduzir, publicar, distribuir ou vender qualquer
+                conteúdo
+                da loja sem nosso consentimento prévio por escrito. <br>
+                <span>Limitação de Responsabilidade:</span> <br>
+                • A Type-Z não se responsabiliza por quaisquer danos diretos, indiretos, incidentais, especiais ou
+                consequentes
+                decorrentes do uso ou da incapacidade de usar a Type-Z ou seus produtos. <br>
+                • A Type-Z não garante que ou seus produtos estejam livres de erros ou falhas. <br>
+                <span>Lei Aplicável e Foro:</span> <br>
+                • Estes termos e condições serão regidos e interpretados de acordo com as leis brasileiras. <br>
+                • Qualquer disputa decorrente ou relacionada a estes termos e condições será submetida à jurisdição
+                exclusiva
+                dos tribunais do Brasil. <br>
+                <span>Disposições Gerais:</span> <br>
+                • Estes termos e condições constituem o acordo total entre você e a Type-Z em relação ao assunto aqui
+                tratado. <br>
+                • Nenhuma alteração ou renúncia a estes termos e condições será válida, a menos que seja feita por
+                escrito e
+                assinada por ambas as partes. <br>
+                • Se qualquer disposição destes termos e condições for considerada inválida ou inexequível, tal
+                disposição será
+                considerada excluída destes termos e condições e as disposições restantes permanecerão em pleno vigor e
+                efeito. <br>
+            </p>
+        </section>
+    </div>
+    <div class="loadingscreen">
+        <div class="loadingscreen__content"><img src="../images/PNGLogo.webp"></div>
+    </div>
+    <footer class="footer">
+        <div class="center__align">
+            <p class="footer__title">
+                © Type-Z all rights reserved | Made by TueznX
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://kit.fontawesome.com/6f7452fb03.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+</body>
+
+</html>
